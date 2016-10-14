@@ -54,7 +54,9 @@ echo xx | sudo -S crond &
 echo xx | sudo -S anacron -f &
 sh /home/dpunk12/.conky/conky-startup.sh &
 sleep 5s &
-exec i3
+exec i3 &
+exec feh --bg-fill "$(find ~/Downloads/Wallpapers/|shuf -n1)" &
+exec compton
 #(sh /home/dpunk12/myscripts/change_wallpaper_every.sh &)
 
 #xclock -geometry 50x50-1+1 &
